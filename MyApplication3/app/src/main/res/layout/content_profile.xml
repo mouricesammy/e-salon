@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mourice.esalon.activity.ProfileActivity"
+    tools:showIn="@layout/app_bar_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/model"
+            android:layout_marginBottom="10dp"/>
+
+        <TextClock
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/get_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:gravity="center"
+            android:text="@string/large_text"
+            android:textColor="@color/accent"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/model"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/male_services"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/services" />
+
+
+                <TextView
+                    android:id="@+id/editText2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/male_services"
+                    android:layout_below="@+id/male_services"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Services"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/my_appointments"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"
+                    android:clickable="true"
+                    android:src="@drawable/appointment" />
+
+                <TextView
+                    android:id="@+id/editText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/my_appointments"
+                    android:layout_below="@+id/my_appointments"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="My Appointments"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/about"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/gallery2" />
+
+                <TextView
+                    android:id="@+id/gal_text"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/about"
+                    android:layout_below="@+id/about"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="About Esalon"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/promotions"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/promotions" />
+
+                <TextView
+                    android:id="@+id/promotions_text"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/promotions"
+                    android:layout_below="@+id/promotions"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Promotions"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/add_service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/hrs"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/abstract4" />
+
+                <TextView
+                    android:id="@+id/text_service"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/hrs"
+                    android:layout_below="@+id/hrs"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Business Hours"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"
+                    android:clickable="true"
+                    android:src="@drawable/abstract9"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/prof_text"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/profile"
+                    android:layout_below="@+id/profile"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="View Profile"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

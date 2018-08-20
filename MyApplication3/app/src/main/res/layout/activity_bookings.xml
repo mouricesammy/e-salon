@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mourice.esalon.activity.Bookings">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="3dp"
+                app:cardCornerRadius="@dimen/card_album_radius"
+                tools:layout_editor_absoluteY="8dp"
+                tools:layout_editor_absoluteX="8dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_top">
+
+                    <ImageView
+                        android:id="@+id/image_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="centerCrop"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+                    />
+
+
+                    <TextView
+                        android:id="@+id/title_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Title"
+                        android:textColor="@color/primary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/image_b"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/desc_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Description"
+                        android:layout_below="@+id/title_b"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/desc_b"
+                        android:paddingLeft="10dp"
+                        android:text="Price: Ksh." />
+
+                    <TextView
+                        android:id="@+id/price_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/desc_b"
+                        android:layout_marginStart="4dp"
+                        android:layout_toEndOf="@+id/textView"
+                        android:text="Price" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible"
+                    android:layout_below="@+id/view_top">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="choose time and date to book an appointment"
+                        android:id="@+id/control"
+                        android:paddingBottom="20dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/dateView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:padding="8dp"
+                        android:layout_below="@+id/control"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/in_date"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:inputType="date"
+                        android:layout_alignBottom="@+id/dateView"
+                        android:layout_toEndOf="@+id/dateView" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:padding="8dp"
+                        android:id="@+id/timeView"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignBaseline="@+id/dateView"
+                        android:layout_alignBottom="@+id/dateView"
+                        android:layout_toEndOf="@+id/in_date" />
+
+                    <EditText
+                        android:id="@+id/in_time"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:inputType="time"
+                        android:layout_alignBaseline="@+id/timeView"
+                        android:layout_alignBottom="@+id/timeView"
+                        android:layout_toEndOf="@+id/timeView" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Book for: "
+                        android:padding="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/in_date"
+                        android:id="@+id/textView2" />
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner"
+                        android:layout_alignBaseline="@+id/textView2"
+                        android:layout_toEndOf="@+id/textView2">
+
+                    </android.support.v7.widget.AppCompatSpinner>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="people."
+                        android:layout_alignBaseline="@+id/textView2"
+                        android:layout_toEndOf="@+id/spinner"
+                        android:id="@+id/textView3" />
+
+
+                    <Button
+                        android:id="@+id/post_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_blue_dark"
+                        android:text="BOOK NOW"
+                        android:drawableLeft="@drawable/book"
+                        android:padding="8dp"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="47dp"
+                        android:layout_below="@+id/textView2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="20dp"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+               </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </ScrollView>

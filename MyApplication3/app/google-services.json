@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "529437627932",
+    "firebase_url": "https://salon-booking-11091.firebaseio.com",
+    "project_id": "salon-booking-11091",
+    "storage_bucket": "salon-booking-11091.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529437627932:android:1ac9505ac4e6ff0b",
+        "android_client_info": {
+          "package_name": "com.example.mourice.esalon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529437627932-5qidqujtv2n19ninm40g8detngv3c3ke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZPzb5lpnePZK9Ct2QtFsJDN4MoAk022E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

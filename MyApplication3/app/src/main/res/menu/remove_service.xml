@@ -1,0 +1,11 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/deleteService"
+            android:title="Remove Service" />
+
+        <item
+            android:id="@+id/close1"
+            android:title="Close" />
+    </menu>
+
